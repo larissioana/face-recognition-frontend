@@ -83,7 +83,7 @@ class App extends Component {
   .then(response => {
     console.log('hi', response)
     if (response) {
-      fetch('https://shrouded-sands-71043.herokuapp.com:3000/image', {
+      fetch('https://shrouded-sands-71043.herokuapp.com/image', {
         method: 'put',
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({
@@ -115,7 +115,7 @@ class App extends Component {
     const {isSignedIn,imageUrl,route,box}=this.state
   return (
     <div className="App">
-     <ParticlesBg type='cobweb' bg={true} num='40' color='#17181A' z-index='-1'
+     <ParticlesBg type='cobweb' bg={true} num='50' color='#ebebeb' z-index='-1'
       />
       <Nav onRouteChange={this.onRouteChange} isSignedIn={isSignedIn}/>
       { route === 'home'

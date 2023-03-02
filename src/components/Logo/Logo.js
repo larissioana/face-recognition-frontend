@@ -12,7 +12,7 @@ const Logo=()=>{
          glareMaxOpacity={0.45}
          scale={1.02}
          gyroscope={true}
-         style={{width:'150px',height:'150px'}}
+         style={{width:'200px',height:'200px'}}
          >
         <img src={logo} alt='logo' className='logo'/>
         </Tilt>
